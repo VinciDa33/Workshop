@@ -1,2 +1,2 @@
-public class Sensor {
+public class Sensor extends Unit{
 }

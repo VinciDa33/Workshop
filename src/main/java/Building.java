@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class Building {
+public class Building extends Unit{
 
-    private ArrayList<Sensor> Sensor;
+    private ArrayList<Sensor> sensor;
+    private ArrayList<Actuator> actuator;
 }
