@@ -1,9 +1,7 @@
-public class CO2Sensor extends Sensor{
-
-
+public class VentilationActuator extends Actuator{
     @Override
-    public double getValue() {
-        return super.getValue();
+    public void setValue() {
+        super.setValue();
     }
 
     @Override

@@ -1,6 +1,4 @@
-public class CO2Sensor extends Sensor{
-
-
+public class TemperatureSensor extends Sensor{
     @Override
     public double getValue() {
         return super.getValue();
