@@ -8,8 +8,8 @@ public class Building extends Unit{
     private List<Actuator> actuator = new ArrayList<>();
 
 
-    Building(String name){
-        super(name);
+    Building(String name, UUID id){
+        super(name, id);
     }
 
     public List<Sensor> getSensors(){
@@ -21,7 +21,7 @@ public class Building extends Unit{
     }
 
     public UUID addTempSensor(String name){
-        TempSensor ts = new TempSensor(name);
+        TemperatureSensor ts = new TemperatureSensor(name);
         sensor.add(ts);
         UUID id = UUID.fromString(name);
         return id;
@@ -36,6 +36,12 @@ public class Building extends Unit{
         if (sensor.contains(id)){
             sensor.remove(id);
         }
+    }
+    public UUID addVentilator(String name){
+        VentilationActuator va = new VentilationActuator(name);
+        actuator.add(va);
+        UUID id = UUID.fromString(name);
+        return id;
     }
     public void removeActuator(UUID id){
         if (actuator.contains(id))

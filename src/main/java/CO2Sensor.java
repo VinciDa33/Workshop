@@ -1,13 +1,12 @@
 public class CO2Sensor extends Sensor{
 
-    double value;
     public CO2Sensor(String name) {
         super(name);
     }
 
     @Override
     public double getValue() {
-        return value;
+        return super.value;
     }
 
     @Override
