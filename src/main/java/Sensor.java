@@ -1,12 +1,12 @@
-public class Sensor extends Unit{
+import java.util.UUID;
 
-    Sensor(String name) {
-        super(name);
+public class Sensor extends Unit{
+    Sensor(String name, UUID id){
+        super(name, id);
     }
 
     double value;
     public double getValue(){
         return value;
-
     }
 }

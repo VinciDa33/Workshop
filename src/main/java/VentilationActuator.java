@@ -1,7 +1,9 @@
+import java.util.UUID;
+
 public class VentilationActuator extends Actuator{
 
-    VentilationActuator(String name){
-        super(name);
+    VentilationActuator(String name,UUID id){
+        super(name, id);
     }
     @Override
     public void setValue() {

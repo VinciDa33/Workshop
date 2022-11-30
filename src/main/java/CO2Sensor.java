@@ -1,7 +1,9 @@
+import java.util.UUID;
+
 public class CO2Sensor extends Sensor{
 
-    public CO2Sensor(String name) {
-        super(name);
+    public CO2Sensor(String name, UUID id) {
+        super(name, id);
     }
 
     @Override
