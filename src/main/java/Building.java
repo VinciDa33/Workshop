@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public class Building extends Unit{
 
-    private List<Sensor> sensor = new ArrayList<>();
-    private List<Actuator> actuator = new ArrayList<>();
+    private ArrayList<Sensor> sensor = new ArrayList<>();
+    private ArrayList<Actuator> actuator = new ArrayList<>();
 
 
     Building(String name, UUID id){

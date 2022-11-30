@@ -11,4 +11,7 @@ public class Unit {
     public UUID getID(){
         return id;
     }
+    public String getName(){
+        return name;
+    }
 }
